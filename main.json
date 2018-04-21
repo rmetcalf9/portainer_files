@@ -1,6 +1,6 @@
 [
   {
-    "title": "DockJob-https-BasicAuth,
+    "title": "DockJob-https-BasicAuth",
     "type": "stack",
     "categories": ["RJMApps"],
     "description": "Job runner with web interface. (HTTPS version with basic auth)",
