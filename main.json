@@ -10,5 +10,17 @@
       "url": "https://github.com/rmetcalf9/dockJob",
       "stackfile": "composeExamples/docker-compose-https-basic-auth.yml"
     }
+  },
+  {
+    "title": "DockPond",
+    "type": "stack",
+    "categories": ["RJMApps"],
+    "description": "Datastore that wraps EBO's around a cloud database and provides swaggerUI interface. Designed for use in a docker container.",
+    "logo": "",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/rmetcalf9/dockPond",
+      "stackfile": "composeExamples/portainer/docker-compose.yml"
+    }
   }
 ]
