@@ -1,0 +1,14 @@
+{
+  {
+    "title": "DockJob-https-BasicAuth,
+    "type": "stack",
+    "categories": ["RJMApps"],
+    "description": "Job runner with web interface. (HTTPS version with basic auth)",
+    "logo": "",
+    "platform": "linux",
+    "repository": {
+      "url": "https://github.com/rmetcalf9/dockJob",
+      "stackfile": "composeExamples/docker-compose-https-basic-auth.yml"
+    }
+  }
+]
