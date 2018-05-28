@@ -22,13 +22,13 @@
       "url": "https://github.com/rmetcalf9/dockPond",
       "stackfile": "composeExamples/portainer/docker-compose.yml"
     },
-    "env": {
+    "env": [
       {
         "name": "exthostname",
         "label": "External Hostname",
         "description": "The main hostname the webapp needs to use to be accessed and access the services",
         "http://cat-sdts.metcarob-home.com": "pre-defined value for the variable"
       }
-    }
+    ]
   }
 ]
