@@ -27,7 +27,13 @@
         "name": "EXTURL",
         "label": "External URL",
         "description": "The main URL the webapp needs to use to be accessed and access the services (including http or https, no trailing slash or port)",
-        "http://cat-sdts.metcarob-home.com": "pre-defined value for the variable"
+        "set": "http://cat-sdts.metcarob-home.com"
+      },
+      {
+        "name": "EXTPORT",
+        "label": "External PORT",
+        "description": "The main PORT the webapp needs to use to be accessed and access the services",
+        "set": "80"
       }
     ]
   }
