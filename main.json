@@ -76,22 +76,22 @@
         "name": "APIAPP_APIURL",
         "label": "TODO 1",
         "description": "TODO e.g. http://localhost:80/api"
-      }
+      },
       {
         "name": "APIAPP_APIDOCSURL",
         "label": "TODO 2",
         "description": "TODO e.g. http://localhost:80/apidocs"
-      }
+      },
       {
         "name": "APIAPP_APIACCESSSECURITY",
         "label": "TODO 3",
         "description": "TODO e.g. '[]'"
-      }
+      },
       {
         "name": "APIAPP_EBOAPIURL",
         "label": "TODO 4",
         "description": "TODO e.g. http://localhost:80/ebos"
-      }
+      },
       {
         "name": "APIAPP_EBOAPIDOCSURL",
         "label": "TODO 5",
