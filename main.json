@@ -40,6 +40,63 @@
     "title": "DockPond",
     "description": "Datapond endpoint",
     "logo": "",
-    "image": "metcarob/dockpond:latest"
+    "image": "metcarob/dockpond:latest",
+    "env": [
+      {
+        "name": "APIAPP_ENVIROMENT",
+        "label": "Enviroment",
+        "description": "Identifier for the enviroment e.g. DEV/TEST/PROD/etc"
+      },
+      {
+        "name": "APIAPP_CASS_IPLIST",
+        "label": "Cassandra IP or Host List",
+        "description": "Connection details for cassandra cluster"
+      },
+      {
+        "name": "APIAPP_CASS_IPLIST",
+        "label": "Cassandra IP or Host List",
+        "description": "Connection details for cassandra cluster e.g. [ 'cassandra-1', 'cassandra-2', 'cassandra-3' ]"
+      },
+      {
+        "name": "APIAPP_CASS_PORT",
+        "label": "Cassandra Port",
+        "description": "Connection details for cassandra cluster e.g. 9042"
+      },
+      {
+        "name": "APIAPP_CASS_REPLICATION",
+        "label": "Replication stratagy",
+        "description": "Replication stratagy to use with keyspace e.g. { 'class': 'SimpleStrategy', 'replication_factor': '3' }"
+      },
+      {
+        "name": "APIAPP_GITHUBREPOLOCATION",
+        "label": "EBO Git location",
+        "description": "Location of git repo containing EBOs e.g. https://api.github.com/repos/rmetcalf9/dockPondSampleEBOs"
+      },
+      {
+        "name": "APIAPP_APIURL",
+        "label": "TODO 1",
+        "description": "TODO e.g. http://localhost:80/api"
+      }
+      {
+        "name": "APIAPP_APIDOCSURL",
+        "label": "TODO 2",
+        "description": "TODO e.g. http://localhost:80/apidocs"
+      }
+      {
+        "name": "APIAPP_APIACCESSSECURITY",
+        "label": "TODO 3",
+        "description": "TODO e.g. '[]'"
+      }
+      {
+        "name": "APIAPP_EBOAPIURL",
+        "label": "TODO 4",
+        "description": "TODO e.g. http://localhost:80/ebos"
+      }
+      {
+        "name": "APIAPP_EBOAPIDOCSURL",
+        "label": "TODO 5",
+        "description": "TODO e.g. http://localhost:80/ebodocs"
+      }
+    ]
   }
 ]
