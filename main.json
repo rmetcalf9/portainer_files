@@ -74,29 +74,66 @@
       },
       {
         "name": "APIAPP_APIURL",
-        "label": "TODO 1",
+        "label": "APIAPP_APIURL",
         "description": "TODO e.g. http://localhost:80/api"
       },
       {
         "name": "APIAPP_APIDOCSURL",
-        "label": "TODO 2",
+        "label": "APIAPP_APIDOCSURL",
         "description": "TODO e.g. http://localhost:80/apidocs"
       },
       {
         "name": "APIAPP_APIACCESSSECURITY",
-        "label": "TODO 3",
+        "label": "APIAPP_APIACCESSSECURITY",
         "description": "TODO e.g. '[]'"
       },
       {
         "name": "APIAPP_EBOAPIURL",
-        "label": "TODO 4",
+        "label": "APIAPP_EBOAPIURL",
         "description": "TODO e.g. http://localhost:80/ebos"
       },
       {
         "name": "APIAPP_EBOAPIDOCSURL",
-        "label": "TODO 5",
+        "label": "APIAPP_EBOAPIDOCSURL",
         "description": "TODO e.g. http://localhost:80/ebodocs"
       }
     ]
+  },
+  {
+    "type": "container",
+    "title": "Cassandra",
+    "description": "Cassandra database instance",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://commons.wikimedia.org/wiki/File:Cassandra_logo.svg",
+    "image": "cassandra:3.11.2",
+    "env": [
+      {
+        "name": "CASSANDRA_BROADCAST_ADDRESS",
+        "label": "CASSANDRA_BROADCAST_ADDRESS"
+      }
+    ],
+    "ports": [
+      "7000/tcp"
+    ]
+  },
+  {
+    "type": "container",
+    "title": "MySQL",
+    "description": "The most popular open-source database",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo": "https://portainer.io/images/logos/mysql.png",
+    "image": "mysql:latest",
+    "env": [
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "Root password"
+      }
+    ],
+    "ports": [
+      "3306/tcp"
+    ],
+    "volumes": ["/var/lib/mysql"]
   }
 ]
