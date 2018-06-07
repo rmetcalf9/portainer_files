@@ -105,7 +105,7 @@
     "description": "Cassandra database instance",
     "categories": ["database"],
     "platform": "linux",
-    "logo": "https://commons.wikimedia.org/wiki/File:Cassandra_logo.svg",
+    "logo": "https://commons.wikimedia.org/wiki/File:Apache-cassandra-icon.png",
     "image": "cassandra:3.11.2",
     "env": [
       {
