@@ -34,5 +34,12 @@
         "description": "The main PORT the webapp needs to use to be accessed and access the services"
       }
     ]
+  },
+  {
+    "type": "container",
+    "title": "DockPond",
+    "description": "Datapond endpoint",
+    "logo": "",
+    "image": "metcarob/dockpond:latest"
   }
 ]
