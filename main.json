@@ -3,13 +3,25 @@
     "title": "DockJob-https-BasicAuth",
     "type": "stack",
     "categories": ["RJMApps"],
-    "description": "Job runner with web interface. (HTTPS version with basic auth)",
+    "description": "Job runner with web interface. (HTTPS version with basic auth). Use sampleuser as username and password.",
     "logo": "",
     "platform": "linux",
     "repository": {
       "url": "https://github.com/rmetcalf9/dockJob",
       "stackfile": "composeExamples/docker-compose-https-basic-auth.yml"
-    }
+    },
+    "env": [
+      {
+        "name": "EXTURL",
+        "label": "External URL",
+        "description": "The main URL the webapp needs to use to be accessed and access the services (including http or https, no trailing slash or port)"
+      },
+      {
+        "name": "EXTPORT",
+        "label": "External PORT",
+        "description": "The main PORT the webapp needs to use to be accessed and access the services"
+      }
+    ]
   },
   {
     "title": "DockPond",
