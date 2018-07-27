@@ -147,5 +147,28 @@
       "3306/tcp"
     ],
     "volumes": ["/var/lib/mysql"]
+  },
+  {
+    "type": "container",
+    "title": "RabbitMQ",
+    "description": "Highly reliable enterprise messaging system",
+    "categories": ["messaging"],
+    "platform": "linux",
+    "logo": "https://portainer.io/images/logos/rabbitmq.png",
+    "image": "rabbitmq:latest",
+    "env": [
+      {"name": "RABBITMQ_SSL_CACERTFILE", "label" "RABBITMQ_SSL_CACERTFILE"},
+      {"name": "RABBITMQ_SSL_CERTFILE", "label" "RABBITMQ_SSL_CERTFILE"},
+      {"name": "RABBITMQ_SSL_DEPTH", "label" "RABBITMQ_SSL_DEPTH"},
+      {"name": "RABBITMQ_SSL_FAIL_IF_NO_PEER_CERT", "label" "RABBITMQ_SSL_FAIL_IF_NO_PEER_CERT"},
+      {"name": "RABBITMQ_SSL_KEYFILE", "label" "RABBITMQ_SSL_KEYFILE"},
+      {"name": "RABBITMQ_SSL_VERIFY", "label" "RABBITMQ_SSL_VERIFY"}
+    ],
+    "ports": [
+      "5671/tcp",
+      "5672/tcp",
+      "15672/tcp"
+    ],
+    "volumes": ["/var/lib/rabbitmq"]
   }
 ]
